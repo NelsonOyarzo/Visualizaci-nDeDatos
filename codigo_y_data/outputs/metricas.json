@@ -1,0 +1,436 @@
+{
+  "calidad": {
+    "filas": {
+      "clientes": 78000,
+      "bodegas": 7,
+      "pedidos": 193419,
+      "reclamos": 27414,
+      "calificaciones": 77600,
+      "cupones": 48103
+    },
+    "duplicados_pk": {
+      "pedidos": 0,
+      "clientes": 0,
+      "reclamos": 0,
+      "calificaciones": 0,
+      "cupones": 0
+    },
+    "nulos": {
+      "clientes": {},
+      "bodegas": {},
+      "pedidos": {
+        "temp_llegada_c": 129878
+      },
+      "reclamos": {},
+      "calificaciones": {},
+      "cupones": {}
+    },
+    "huerfanos": {
+      "pedidos_sin_cliente": 0,
+      "pedidos_sin_bodega": 0,
+      "reclamos_sin_pedido": 0,
+      "calificaciones_sin_pedido": 0,
+      "cupones_sin_pedido": 0
+    },
+    "outliers_iqr3": {
+      "tiempo_entrega_min": 2446,
+      "monto_productos_clp": 241,
+      "horas_respuesta": 567
+    },
+    "consistencia": {
+      "atrasado_igual_tiempo_mayor_ventana": 0.9998448963131854,
+      "temp_nula_solo_sin_congelados": true,
+      "clientes_registrados_hasta": "2026-06-30"
+    }
+  },
+  "kpis_q3": {
+    "pedidos": 193419,
+    "clientes_activos_30d": 22614,
+    "atraso_pct": 17.608,
+    "p90_min": 63.0,
+    "mediana_min": 33.0,
+    "recompra_pct": 63.34,
+    "reclamos_100": 14.17,
+    "reclamos_tardios_pct": 30.393,
+    "quiebre_frio_pct": 11.056,
+    "ticket_medio": 39841.0
+  },
+  "kpis_por_mes": {
+    "2026-07": {
+      "pedidos": 98822,
+      "clientes_activos_30d": 56350,
+      "atraso_pct": 16.354,
+      "p90_min": 61.0,
+      "mediana_min": 33.0,
+      "recompra_pct": 63.33,
+      "reclamos_100": 13.75,
+      "reclamos_tardios_pct": 30.146,
+      "quiebre_frio_pct": 11.221,
+      "ticket_medio": 38887.0
+    },
+    "2026-08": {
+      "pedidos": 56779,
+      "clientes_activos_30d": 31690,
+      "atraso_pct": 18.137,
+      "p90_min": 63.0,
+      "mediana_min": 33.0,
+      "recompra_pct": 63.356,
+      "reclamos_100": 14.29,
+      "reclamos_tardios_pct": 30.581,
+      "quiebre_frio_pct": 10.876,
+      "ticket_medio": 40857.0
+    },
+    "2026-09": {
+      "pedidos": 37818,
+      "clientes_activos_30d": 22614,
+      "atraso_pct": 20.094,
+      "p90_min": 65.0,
+      "mediana_min": 34.0,
+      "recompra_pct": null,
+      "reclamos_100": 15.12,
+      "reclamos_tardios_pct": 30.715,
+      "quiebre_frio_pct": 10.894,
+      "ticket_medio": 40807.0
+    }
+  },
+  "auditoria": {
+    "A1": {
+      "reclamos": 27414,
+      "pedidos": 193419,
+      "reclamos_por_pedido_pct": 14.173,
+      "por_mes_pct": {
+        "2026-07": 13.746,
+        "2026-08": 14.289,
+        "2026-09": 15.117
+      },
+      "nota": "Las visitas a la app no vienen en los CSV: el 1,2% del memo (reclamos/visitas) no es reproducible; el denominador correcto es pedidos."
+    },
+    "A2": {
+      "pedidos_mes": {
+        "2026-07": 98822,
+        "2026-08": 56779,
+        "2026-09": 37818
+      },
+      "var_jul_sep_pct": -61.731,
+      "ticket_con_cargo": {
+        "2026-07": 38887.0,
+        "2026-08": 40857.0,
+        "2026-09": 40807.0
+      },
+      "ticket_sin_cargo": {
+        "2026-07": 38887.0,
+        "2026-08": 38867.0,
+        "2026-09": 38817.0
+      },
+      "primer_pedido_vs_recurrente": {
+        "2026-07": {
+          "primer_pedido": 57302,
+          "recurrente": 41520
+        },
+        "2026-08": {
+          "primer_pedido": 10498,
+          "recurrente": 46281
+        },
+        "2026-09": {
+          "primer_pedido": 10200,
+          "recurrente": 27618
+        }
+      }
+    },
+    "A3": {
+      "santiago_pct_pedidos": 53.342,
+      "santiago_atraso_pct": 22.954,
+      "total_atraso_pct": 17.608,
+      "santiago_pct_de_atrasos": 69.537,
+      "santiago_p90": 68.0,
+      "santiago_atraso_pct_ventana60": 14.478,
+      "tabla_ciudad": [
+        {
+          "ciudad": "Concepción",
+          "pedidos": 27773,
+          "atraso": 0.128,
+          "p90": 56.0,
+          "pct_total": 14.359
+        },
+        {
+          "ciudad": "La Serena",
+          "pedidos": 15985,
+          "atraso": 0.096,
+          "p90": 45.0,
+          "pct_total": 8.264
+        },
+        {
+          "ciudad": "Santiago",
+          "pedidos": 103174,
+          "atraso": 0.23,
+          "p90": 68.0,
+          "pct_total": 53.342
+        },
+        {
+          "ciudad": "Temuco",
+          "pedidos": 11996,
+          "atraso": 0.101,
+          "p90": 47.0,
+          "pct_total": 6.202
+        },
+        {
+          "ciudad": "Valparaíso",
+          "pedidos": 34491,
+          "atraso": 0.118,
+          "p90": 54.0,
+          "pct_total": 17.832
+        }
+      ]
+    },
+    "A4": {
+      "por_bodega_tipo": [
+        {
+          "bodega": "Centro",
+          "tipo_pedido": "Complejo",
+          "pedidos": 24964,
+          "atrasados": 6043,
+          "atraso_pct": 24.2
+        },
+        {
+          "bodega": "Centro",
+          "tipo_pedido": "Simple",
+          "pedidos": 6298,
+          "atrasados": 600,
+          "atraso_pct": 9.5
+        },
+        {
+          "bodega": "Concepción",
+          "tipo_pedido": "Complejo",
+          "pedidos": 9773,
+          "atrasados": 2222,
+          "atraso_pct": 22.7
+        },
+        {
+          "bodega": "Concepción",
+          "tipo_pedido": "Simple",
+          "pedidos": 18000,
+          "atrasados": 1340,
+          "atraso_pct": 7.4
+        },
+        {
+          "bodega": "La Serena",
+          "tipo_pedido": "Complejo",
+          "pedidos": 5724,
+          "atrasados": 954,
+          "atraso_pct": 16.7
+        },
+        {
+          "bodega": "La Serena",
+          "tipo_pedido": "Simple",
+          "pedidos": 10261,
+          "atrasados": 584,
+          "atraso_pct": 5.7
+        },
+        {
+          "bodega": "Norte",
+          "tipo_pedido": "Complejo",
+          "pedidos": 6219,
+          "atrasados": 1752,
+          "atraso_pct": 28.2
+        },
+        {
+          "bodega": "Norte",
+          "tipo_pedido": "Simple",
+          "pedidos": 25131,
+          "atrasados": 2868,
+          "atraso_pct": 11.4
+        },
+        {
+          "bodega": "Sur",
+          "tipo_pedido": "Complejo",
+          "pedidos": 13513,
+          "atrasados": 6191,
+          "atraso_pct": 45.8
+        },
+        {
+          "bodega": "Sur",
+          "tipo_pedido": "Simple",
+          "pedidos": 27049,
+          "atrasados": 6229,
+          "atraso_pct": 23.0
+        },
+        {
+          "bodega": "Temuco",
+          "tipo_pedido": "Complejo",
+          "pedidos": 4134,
+          "atrasados": 752,
+          "atraso_pct": 18.2
+        },
+        {
+          "bodega": "Temuco",
+          "tipo_pedido": "Simple",
+          "pedidos": 7862,
+          "atrasados": 460,
+          "atraso_pct": 5.9
+        },
+        {
+          "bodega": "Valparaíso",
+          "tipo_pedido": "Complejo",
+          "pedidos": 12117,
+          "atrasados": 2513,
+          "atraso_pct": 20.7
+        },
+        {
+          "bodega": "Valparaíso",
+          "tipo_pedido": "Simple",
+          "pedidos": 22374,
+          "atrasados": 1550,
+          "atraso_pct": 6.9
+        }
+      ],
+      "total_bodega": {
+        "Centro": {
+          "pedidos": 31262,
+          "atraso_pct": 21.2,
+          "pct_complejos": 79.9
+        },
+        "Concepción": {
+          "pedidos": 27773,
+          "atraso_pct": 12.8,
+          "pct_complejos": 35.2
+        },
+        "La Serena": {
+          "pedidos": 15985,
+          "atraso_pct": 9.6,
+          "pct_complejos": 35.8
+        },
+        "Norte": {
+          "pedidos": 31350,
+          "atraso_pct": 14.7,
+          "pct_complejos": 19.8
+        },
+        "Sur": {
+          "pedidos": 40562,
+          "atraso_pct": 30.6,
+          "pct_complejos": 33.3
+        },
+        "Temuco": {
+          "pedidos": 11996,
+          "atraso_pct": 10.1,
+          "pct_complejos": 34.5
+        },
+        "Valparaíso": {
+          "pedidos": 34491,
+          "atraso_pct": 11.8,
+          "pct_complejos": 35.1
+        }
+      }
+    },
+    "A5": {
+      "recompra_atrasado_pct": 40.606,
+      "recompra_a_tiempo_pct": 67.997,
+      "recompra_por_estrellas_pct": {
+        "1": 55.386,
+        "2": 55.933,
+        "3": 64.621,
+        "4": 64.673,
+        "5": 64.958
+      },
+      "recompra_atraso_x_estrellas": {
+        "a tiempo | 1-2 estrellas": 68.7,
+        "a tiempo | 3 estrellas": 67.9,
+        "a tiempo | 4-5 estrellas": 68.1,
+        "atrasado | 1-2 estrellas": 41.4,
+        "atrasado | 3 estrellas": 40.8,
+        "atrasado | 4-5 estrellas": 40.3
+      },
+      "recompra_faltantes_pct": {
+        "False": 66.581,
+        "True": 50.816
+      },
+      "recompra_quiebre_frio_pct": 44.882,
+      "recompra_reclamo_pct": {
+        "sin reclamo": 66.159,
+        "respuesta <= 24 h": 51.829,
+        "respuesta > 24 h": 32.406
+      },
+      "recompra_cupon_x_atraso_pct": {
+        "a tiempo | sin cupon": 66.718,
+        "a tiempo | con cupon": 71.855,
+        "atrasado | sin cupon": 39.262,
+        "atrasado | con cupon": 44.576
+      }
+    },
+    "A6": {
+      "tasa_respuesta_pct": 40.12,
+      "n_calificaciones": 77600,
+      "media_estrellas": 3.06,
+      "distribucion_pct": {
+        "1": 7.303,
+        "2": 7.133,
+        "3": 65.608,
+        "4": 12.174,
+        "5": 7.782
+      },
+      "pct_1_2": 14.436,
+      "pct_1_2_atrasado": 40.168,
+      "pct_1_2_a_tiempo": 8.916,
+      "tasa_respuesta_por_n_orden_pct": {
+        "1": 40.399,
+        "2": 39.863,
+        "3": 39.753,
+        "4": 40.151
+      }
+    }
+  },
+  "modelo_fuga": {
+    "auc": 0.644,
+    "tasa_fuga_pct": 36.66,
+    "n": 155601,
+    "importancias": [
+      {
+        "variable": "Pedido atrasado",
+        "importancia_gini_pct": 54.4,
+        "importancia_permutacion_pct": 50.4
+      },
+      {
+        "variable": "Productos faltantes o sustituidos",
+        "importancia_gini_pct": 21.3,
+        "importancia_permutacion_pct": 27.1
+      },
+      {
+        "variable": "Reclamo sin respuesta > 24 h",
+        "importancia_gini_pct": 13.5,
+        "importancia_permutacion_pct": 6.3
+      },
+      {
+        "variable": "Congelados fuera de temperatura",
+        "importancia_gini_pct": 5.1,
+        "importancia_permutacion_pct": 4.9
+      },
+      {
+        "variable": "Uso de cupón",
+        "importancia_gini_pct": 2.7,
+        "importancia_permutacion_pct": 8.7
+      },
+      {
+        "variable": "Calificación del pedido (0 = sin)",
+        "importancia_gini_pct": 1.5,
+        "importancia_permutacion_pct": 1.2
+      },
+      {
+        "variable": "Ciudad de origen",
+        "importancia_gini_pct": 1.4,
+        "importancia_permutacion_pct": 1.4
+      }
+    ]
+  },
+  "supuestos": {
+    "UMBRAL_FRIO_C": -15.0,
+    "VENTANA_RECOMPRA_DIAS": 30,
+    "FECHA_CORTE_RECOMPRA": "2026-08-31",
+    "RESP_LIMITE_H": 24,
+    "SEED": 42
+  },
+  "metas_kpi_parte1": {
+    "clientes_activos": 61300,
+    "p90_min": 60.0,
+    "recompra_pct": 41.0,
+    "reclamos_100": 12.6
+  }
+}
